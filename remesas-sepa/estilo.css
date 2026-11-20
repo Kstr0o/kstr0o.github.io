@@ -1,0 +1,12 @@
+:root{--fondo:#ffffff;--texto:#1f2328;--suave:#59636e;--acento:#1a5fd6;--borde:#e3e6ea;--caja:#f5f7fa}
+@media (prefers-color-scheme:dark){:root{--fondo:#0f1115;--texto:#e8eaed;--suave:#a0a7b1;--acento:#6ea0ff;--borde:#2a2f37;--caja:#171a20}}
+*{box-sizing:border-box}body{margin:0;background:var(--fondo);color:var(--texto);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 64px}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:18px;color:var(--texto);text-decoration:none}nav a{color:var(--suave);text-decoration:none;margin-left:14px;font-size:14px}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:40px 0 12px}h2{margin-top:40px}.sub{color:var(--suave);font-size:18px;max-width:640px}
+.boton{display:inline-block;background:var(--acento);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;margin:8px 8px 0 0}
+.boton.sec{background:var(--caja);color:var(--texto);border:1px solid var(--borde)}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+.caja{background:var(--caja);border:1px solid var(--borde);border-radius:10px;padding:16px}.caja h3{margin:0 0 6px;font-size:16px}.caja p{margin:0;color:var(--suave);font-size:14px}
+ol li{margin-bottom:6px}footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--borde);color:var(--suave);font-size:13px}footer a{color:var(--suave)}
+.precio{font-size:28px;font-weight:700}.legal h2{font-size:20px}.legal p,.legal li{color:var(--texto)}
